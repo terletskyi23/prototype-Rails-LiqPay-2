@@ -1,0 +1,2 @@
+module PaumentsHelper
+end

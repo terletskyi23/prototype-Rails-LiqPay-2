@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+<br>
+<%= @order.title %>
+<br>
+<%= @order.payed %>
+<br>
+<%=liqpay_button @liqpay_request, title: "Pay now!" %>
+<br><br>
+<%= link_to 'Back', orders_path %>
