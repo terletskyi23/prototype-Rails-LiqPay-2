@@ -4,6 +4,10 @@
 <br>
 <%= @order.payed %>
 <br>
-<%=liqpay_button @liqpay_request, title: "Pay now!" %>
+<%- if !@order.payed %>
+  <%=liqpay_button @liqpay_request, title: "Pay now!" %>
+<%- else %>
+  already paid
+<%- end %>
 <br><br>
 <%= link_to 'Back', orders_path %>

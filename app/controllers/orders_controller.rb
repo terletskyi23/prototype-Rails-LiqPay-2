@@ -18,7 +18,7 @@ class OrdersController < ApplicationController
         description: @order.title,
         sandbox: 1,
         # order_id: @order.id,
-        order_id: '113', #need unic
+        order_id: '125', #make always +1 need to be unical
         result_url: order_url(@order),
         server_url: liqpay_payment_order_url(@order)
       )
